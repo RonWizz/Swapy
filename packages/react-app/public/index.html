@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,23 +12,238 @@
       content="Web site created using create-eth-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-eth-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <div class="header"></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // "site-black": "#1F1D2B",
+              // "dim-white": "#E2E2E2",
+              "site-pink": "#E8006F",
+              "site-dim": "rgba(255, 255, 255, 0.02)",
+              "site-dim2": "rgba(255, 255, 255, 0.13)",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            boxShadow: {
+              card: "0 .8rem 3.2rem 0 rgba(0, 0, 0, 0.07)",
+            },
+          },
+        },
+      };
+    </script>
     <title>Ethereum App</title>
   </head>
   <body>
+    <img src="./1st-img/moon.png" id="icon" height="4rem">
+    <div class="wrapper">
+        <nav class="navbar" id="myNav">
+<!--             <div class="nav-links">
+                <button class="button" type="submit">Connect</button>
+            </div> -->
+            
+
+            <div class="collapse-navbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-link mr-4">
+                        <a class="nav-link active" href="#section_1"><span>Home</span></a>
+                    </li>
+                    <li class="nav-link mr-4">
+                        <a class="nav-link" href="#section_2"><span>LivePrice</span></a>
+                    </li>
+                    <li class="nav-link mr-4">
+                        <a class="nav-link" href="#section_3"><span>Swap</span></a>
+                    </li>
+                    <li class="nav-link mr-4">
+                        <a class="nav-link" href="#section_4"><span>About</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse-navbar1">
+                <ul class="nav-bar1">
+                    <li class="nav-link mr-4">
+                        <a class="nav-link" href="#section_5" class="button1"><button><strong>Swap</strong></button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div data-bs-spy ="scroll" data-bs-target="myNav" class="sectionHead">
+        <section>
+            <img src="./1st-img/Upper-Circle.png" alt="half circle" height="90rem" class="Upper-Circle" id="section_1">
+            <img src="./1st-img/logo-final.png" alt="logo" height="18rem" class="logo">
+            <img src="./1st-img/Character-white.png" alt="character1" height="50rem" class="firstperson">
+            <img src="./1st-img/Character-black.png" alt="character1" height="50rem" class="secondperson">
+            <h1 class="heading"><strong>Exchange your tokens and redeem gaming tokens</strong></h1>
+            <img src="./1st-img/Below-circle.png" alt="circle" height="17.4rem" weight="39.8rem" class="below-circle">
+            <img src="./1st-img/Icon1.png" alt="Eth" class="ethimg">
+            <img src="./1st-img/bitcoin.png" alt="bit" class="bitimg">
+            <img src="./1st-img/compound 1.png" alt="comp1" class="comp1">
+            <img src="./1st-img/compound 2.png" alt="comp2" class="comp2">
+            <img src="./1st-img/vector1.png" alt="vector1" class="vector1">
+            <img src="./1st-img/vector2.png" alt="vector2" class="vector2">
+        </section>
+
+        <section>
+
+            <div class="container" id="section_2">
+                <img src="./2nd-img/UpperCircle.png" alt="UpperCircle" class="upperCircle">
+
+            </div>
+            <div class="2ndpage1">
+                <img src="./2nd-img/belowCircle.png" alt="UpperCircle" class="belowCircle" >
+            </div>
+
+
+
+            <h1 class="heading2" data-aos="flip-up" data-aos-duration="2000"><strong>Live Price Chart</strong></h1>
+            <img src="./2nd-img/Icon1 2nd.png" alt="2ndeth" class="eth2" data-aos="fade-up" data-aos-delay="500">
+            <img src="./2nd-img/bitcoin2nd.png" alt="2ndeth" class="bit2" data-aos="fade-up" data-aos-delay="100">
+            <img src="./2nd-img/compound1-2nd.png" alt="2ndeth" class="comp12" data-aos="fade-up" data-aos-delay="700">
+            <img src="./2nd-img/compound2-2nd.png" alt="2ndeth" class="comp22" data-aos="fade-up" data-aos-delay="100">
+            <img src="./2nd-img/tether.png" alt="2ndeth" class="tether" data-aos="fade-up" data-aos-delay="30">
+            <img src="./2nd-img/Vector1-2nd.png" alt="2ndeth" class="vector1-2nd" data-aos="fade-up" data-aos-delay="20">
+            <img src="./2nd-img/Vector2-2nd.png" alt="2ndvector" class="vector2-2nd" data-aos="fade-up" data-aos-delay="50">
+            <div class="container1" data-aos="flip-up" data-aos-delay="50">
+                <div class="coin-price">
+                    <div class="logo1"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=024"></div>
+                    <div>
+                        <h1>$<span id="bitcoin"></span></h1>
+                        <h1>Bitcoin</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container2" data-aos="flip-up" data-aos-delay="600">
+                <div class="coin-price">
+                    <div class="logo2"><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=024" ></div>
+                    <div>
+                        <h1>$<span id="ethereum"></span></h1>
+                        <h1>Ethereum</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container3" data-aos="flip-up" data-aos-delay="900">
+                <div class="coin-price">
+                    <div class="logo3"><img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=024" ></div>
+                    <div>
+                        <h1>$<span id="tether"></span></h1>
+                        <h1>Tether</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container4" data-aos="flip-up" data-aos-delay="1200">
+                <div class="coin-price">
+                    <div class="logo4"><img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=024" ></div>
+                    <div>
+                        <h1>$<span id="dogecoin"></span></h1>
+                        <h1>Dogecoin</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="initial"></div>
+            <img src="./3rd-img/UpperCircleStars.png" alt="upperCircle3rd" class="upperclassstar" id="section_5">
+            <img src="./3rd-img/UpperCircle3.png" alt="upperCircle3rd" class="upperclass3" id="section_3" id="section_5">
+            <div class="exchangeBox"></div>
+            <img src="./3rd-img/UpperCircleStars.png" alt="upperCircle3rd" class="upperclassstar" id="section_5">
+            <img src="./3rd-img/BelowHalfcircle.png" alt="upperCircle3rd" class="belowcircle3" height="15.7rem" > 
+            <h2 class="swaptitle" data-aos="fade-right" data-aos-delay="500"><strong>Swap Now!<br> And Get Your</strong><br><br> Favourite token</h2>
+        </section>
+       <section>
+            <img src="./4th-img/LastCircle.png" alt="finalCircle" class="finalCircle" height="80.2rem" id="section_4">
+            <img src="./4th-img/ProfilePhoto.png" alt="finalCircle" class="ProfilePic" data-aos="zoom-in-up" data-aos-delay="50">
+            <h1 class="aboutme" data-aos="fade-right"><strong>About The Project</strong></h1>
+            <h1 class="name" data-aos="zoom-in-up" data-aos-delay="50">Sankhadip Pal</h1>
+            <div class="box" data-aos="fade-right" data-aos-delay="1000">
+              <p class="para" data-aos="fade-right" data-aos-delay="1000" id="box"><strong><i>Hey Reader, Gm!</i></strong>🖐, I'm web3 learner, software engineer, currently student and interested in NFT's, DAO. I post web3 related topics on twitter.<br>This dApp is maily focused on swapping. And it has been cloned fron uniswap V2. Here you can swap your wrapped ethereum(test ether) to any customized tokens which is here refered as gaming tokens.<br>
+              -First you have to connect your wallet with the site
+              -Then you scroll down to see the prices of current cryptocurrencies, here i mentioned 4 live coins price, which is Bitcoin-Ethereum-Tether-Dogecoin
+              -You can also click to the swap button on the front page to directly interect with the tokens. There you have to select the token in the first column which you want to swap and
+               select the token in the second column which you want to get after swap. Then simply click approve, after approve it will check your balance sufficiency and open the metamask for confirmation.
+              -After all this process you will recieve your favourite gaming token in your wallet.
+
+ 
+              The all over code is done by myself.Time taken 1 month. <br>Hava a nice day 🙏<br><br>Follow me on twitter for more!
+              </p>
+            </div>
+            <a class="twitter" href="https://twitter.com/sanky____" target="_blank">
+                <img src="./4th-img/twitter.png" alt="finalCircle" class="twitter" >
+            </a>
+
+            <a class="insta" href="https://instagram.com/ron_wizz?igshid=NTA5ZTk1NTc=" target="_blank">
+                <img src="./4th-img/instagram.png" alt="finalCircle" class="insta">
+            </a>
+
+            <a class="github" href="https://github.com/RonWizz" target="_blank">
+                <img src="./4th-img/github.png" alt="finalCircle" class="github" height="4.2rem">
+            </a>
+            <hr class="horizon">
+
+        </section>
+    </div>
+
+    <script type="scroll.js"></script> 
+    <script>
+        var icon = document.getElementById("icon")
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./1st-img/sun.png";
+
+            }else{
+                icon.src = "./1st-img/moon.png";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+    <script type="index.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $(window).on('scroll',function(){
+
+            var link = $('.collapse-navbar a.nav-link');
+            var top = $(window).scrollTop();
+
+              $('.section').each(function(){
+              var id = $(this).attr('id');
+              var height = $(this).height();
+              var offset = $(this).offset().top - 150;
+              if(top >= offset && top < offset + height){
+                link.removeClass('active');
+                $('.collapse-navbar').find('[data-scroll="' + id + '"]').addClass('active');
+              }
+          });
+
+        });
+
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

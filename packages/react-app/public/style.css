@@ -1,0 +1,1719 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+
+}
+
+
+body {
+  margin: 0;
+  position: relative;
+/*  background: #FFFFFF;*/
+  background: var(--secondary-color);
+  overflow-x: hidden;
+/*  overflow-y: scroll;*/
+
+}
+
+
+.exchangeBox{
+	position: absolute;
+	top: 200rem;
+	left: 95rem;
+}
+.header{
+	position: fixed;
+	top: 3rem;
+	left: 150rem;
+}
+.font-poppins font-normal text-dim-black text-lg text-center mt-10{
+
+}
+*/@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+.dark-theme{
+    --primary-color: #edf2fc;
+    --secondary-color: #0B0424;
+    --third-color: #808080;
+}
+
+#icon{
+  position: fixed;
+  top: 89.8rem;
+  left: 180rem;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 4rem;
+  z-index:99999;
+  height: 5rem;
+  weight: 5rem;
+
+}
+.collapse-navbar1 .nav-bar1 li a{
+  position: absolute;
+  top: 90rem;
+  left: -70rem;
+
+}
+
+
+
+.collapse-navbar1 .button1{
+  position: absolute;
+  top: 86rem;
+  left: 60%;
+  color: purple;
+}
+
+
+
+
+
+.collapse-navbar{
+/*  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40rem;
+  padding-left: 10%;
+  padding-right: 10%;*/
+  position: fixed;
+  top:50%; right:3rem;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+}
+
+
+.collapse-navbar ul{
+  list-style: none;
+  padding:0; margin: 0;
+}
+.collapse-navbar ul li{
+  width: 20rem;
+  position: relative;
+  text-align: right;
+}
+
+.collapse-navbar ul li a{
+    text-align: center;
+}
+.collapse-navbar ul li .nav-link{
+  color:#fff;
+  display: block;
+  padding:.5rem 0;
+}
+.collapse-navbar ul li .nav-link span{
+  display: inline-block;
+  background: #7035BC;
+  letter-spacing: .1rem;
+  padding:1rem 2.5rem;
+  margin-right: 3rem;
+  border-radius: .3rem;
+  transform: translateX(3rem);
+  opacity: 0;
+}
+.collapse-navbar ul li:hover .nav-link span{
+  transform: translateX(0rem);
+  opacity: 1;
+}
+.collapse-navbar ul li .nav-link span::before{
+  content: '';
+  position: absolute;
+  top:50%; right:0;
+  transform: translate(.7rem, -50%);
+  border-left: .7rem solid #f44336;
+  border-top: .7rem solid transparent;
+  border-bottom: .7rem solid transparent;
+  display: block;
+}
+
+.collapse-navbar ul li .nav-link::before,
+.collapse-navbar ul li .nav-link::after{
+  content: '';
+  position: absolute;
+  top:50%;
+  border-radius: 50%;
+  display: block;
+  transition: .2s ease-out;
+}
+
+.collapse-navbar ul li .nav-link::before{
+  height:.5rem;
+  width: .5rem;
+  border: .2rem solid #333;
+  right:0;
+  transform: translateY(-50%);
+}
+
+/*.collapse-navbar ul li .nav-link.active::before,*/
+.collapse-navbar ul li:hover .nav-link::before{
+  border-color: #f44336;
+  background: #f44336;
+}
+
+.collapse-navbar ul li .nav-link::after{
+  height:1.5rem;
+  width: 1.5rem;
+  border: .2rem solid #f44336;
+  right:-.5rem;
+  transform: translateY(-50%) scale(0);
+}
+
+/*.collapse-navbar ul li .nav-link.active::after,*/
+.collapse-navbar ul li:hover .nav-link::after{
+  transform: translateY(-50%) scale(1);
+}
+
+.wrapper {
+  position: relative;
+  width: 144rem;
+  midheight: 100vh;
+
+}
+
+.Upper-Circle {
+  position: relative;
+  -webkit-animation: fadeInLeft 1.2s both;
+  -moz-animation: fadeInLeft 1.2s both;
+  -o-animation: fadeInLeft 1.2s both;
+  animation: fadeInLeft 1.2s both;
+  animation-name: fadeInLeft;
+  scroll-snap-align: start;
+  height: 90rem;
+
+}
+.logo {
+  position: absolute;
+  top: 5rem;
+  left: 37rem;
+  height: 18rem
+}
+
+.firstperson {
+  position: absolute;
+  right: 49rem;
+  top: 24rem;
+  height: 50rem
+
+}
+.secondperson {
+  position: absolute;
+  right: 20rem;
+  top: 23.6rem;
+  height: 50rem
+
+}
+.heading {
+  text-align: left;
+  font-size: 6.5rem;
+  position: absolute;
+  top: 60rem;
+  left: 22rem;
+  white-space: nowrap;
+  padding: 0rem 2rem;
+  background: linear-gradient(to right, #FFFFFF 20%, #7035BC 23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: fadeInTop 1.2s both;
+  -moz-animation: fadeInTop 1.2s both;
+  -o-animation: fadeInTop 1.2s both;
+  animation: fadeInTop 1.2s both;
+  animation-name: fadeInTop;
+
+}
+
+
+
+.below-circle{
+  position: absolute;
+  right: -2rem;
+  top: 83.5rem;
+  color: var(--third-color);
+  height: 17.4rem 
+  weight: 39.8rem
+
+}
+/*.sec{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33em;
+  color: #777;
+  background: #f9f9f9;
+  letter-spacing: 2rem;
+}*/
+/*.sec:nth-child(odd){
+  background: #ddd;
+}*/
+
+.navbar {
+  position: absolute;
+  top: -2.5rem;
+  left: 100rem;
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.collapse-navbar1 button{
+
+
+  width: 13rem;
+  height: 6rem;
+  padding: 1rem;
+  margin: 0 4rem;
+  font-size: 2rem;
+  position: relative;
+  top: 1rem;
+  left: 55rem;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  color: purple;
+  font-weight: 100;
+  border: .3rem solid purple;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: .4s;
+  background-color: transparent;
+}
+button:hover  {
+  box-shadow:  0 0rem .5rem 0 #581C92,
+              0 0rem 2rem 0 #581C92;
+  text-shadow: 0 0 .3rem #581C92, 0 0 0rem #581C92;
+}
+
+
+/*--------------------------------------Elements------------------------------------------------------------*/
+
+.ethimg{
+  position: absolute;
+  top: 35rem;
+  left: 13rem;
+  animation: fade-up 2s;
+}
+
+.bitimg{
+  position: absolute;
+  top: 35rem;
+  left: 45rem;
+  animation: fade-up 1s;
+}
+
+.comp2{
+  position: absolute;
+  top: 45rem;
+  left: 50rem;
+  animation: fade-up 1.2s;
+}
+
+.comp1{
+  position: absolute;
+  top: 50rem;
+  left: 20rem;
+  animation: fade-up 0.9s;
+}
+
+.vector1{
+  position: absolute;
+  top: 59rem;
+  left: 39rem;
+  animation: fade-up 1s;
+}
+.vector2{
+  position: absolute;
+  top: 74rem;
+  left: 2rem;
+  animation: fade-up 0.9s;
+}
+/*--------------------------------------Animations------------------------------------------------------------*/
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem) scale(1);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-5rem);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: none;
+  }
+
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: none;
+  }
+
+}
+
+
+
+@-webkit-keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+
+  }
+
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+.upperCircle{
+  position: absolute;
+  right: -2rem;
+  top: 100.8rem;
+  scroll-snap-align: center;
+}
+
+.belowCircle{
+  display: block;
+  position: absolute;
+  top: 179rem;
+  left: 38%;
+
+}
+
+.heading2{
+  position: absolute;
+  top: 115rem;
+  left: 31rem;
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+/*-------------------------------------------------Elements------------------------------------------------*/
+.eth2 {
+  position: absolute;
+  top: 110rem;
+  left: 150rem;
+
+}
+.bit2 {
+  position: absolute;
+  top: 120rem;
+  left: 180rem;
+}
+
+.comp22 {
+  position: absolute;
+  top: 140rem;
+  left: 160rem;
+}
+
+.tether{
+  position: absolute;
+  top: 130rem;
+  left: 165rem;
+}
+
+.comp12 {
+  position: absolute;
+  top: 150rem;
+  left: 180rem;
+}
+
+.vector1-2nd{
+  position: absolute;
+  top: 105rem;
+  left: 170rem;
+}
+
+.vector2-2nd{
+  position: absolute;
+  top: 140rem;
+  left: 180rem;
+}
+
+.logo-img {
+    position: absolute;
+    top: 5%;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    position: absolute;
+    top: 145rem;
+    left: 30rem;
+}
+.container1 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+
+
+.container1 .coin-price .logo1{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 145rem;
+    left: 60rem;
+}
+.container2 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container2 .coin-price .logo2{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 145rem;
+    left: 90rem;
+}
+.container3 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container3 .coin-price .logo3{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 145rem;
+    left: 120rem;
+}
+.container4 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container4 .coin-price .logo4{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container1 .coin-price .logo1 img{
+    width: 100%;
+}
+.container2 .coin-price .logo2 img{
+    width: 100%;
+}
+.container3 .coin-price .logo3 img{
+    width: 100%;
+}
+.container4 .coin-price .logo4 img{
+    width: 100%;
+}
+
+.container1 .coin-price h1{
+  color: var(--primary-color);
+}
+
+.container2 .coin-price h1{
+  color: var(--primary-color);
+}
+.container3 .coin-price h1{
+  color: var(--primary-color);
+}
+.container4 .coin-price h1{
+  color: var(--primary-color);
+}
+.container1 .coin-price div{
+    display: block;
+}
+.container2 .coin-price div{
+    display: block;
+}
+.container3 .coin-price div{
+    display: block;
+}
+.container4 .coin-price div{
+    display: block;
+}
+.container1 .coin-price div h1{
+
+    font-size: 2.8rem;
+}
+.container2 .coin-price div h1{
+
+    font-size: 2.8rem;
+}
+.container3 .coin-price div h1{
+
+    font-size: 2.8rem;
+}
+.container4 .coin-price div h1{
+
+    font-size: 2.8rem;
+}
+
+/*---------------------------------------3rd page--------------------------------------*/
+.upperclass3 {
+  position: absolute;
+  top: 190.7rem;
+  left: 63.5rem;
+  scroll-snap-align: center;
+}
+.upperclassstar{
+  position: absolute;
+  top: 190.7rem;
+  left: 64.5rem;
+}
+
+.belowcircle3{
+  position: absolute;
+  top: 260rem;
+  left: 0rem;
+  height: 15.7rem
+
+}
+
+.swaptitle{
+  position: absolute;
+  top: 197rem;
+  left: 10rem;
+  font-size: 6rem;
+  color: var(--primary-color);
+
+}
+/*--------------------------------------------4thPage-------------------------------------------------*/
+
+.finalCircle{
+  position: absolute;
+  top: 275.7rem;
+  scroll-snap-align: end;
+  height: 80.2rem
+
+}
+
+.ProfilePic {
+  position: absolute;
+  top: 290rem;
+  left: 35rem;
+}
+.name {
+  position: absolute;
+  top: 310rem;
+  left: 34rem;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.aboutme{
+  position: absolute;
+  top: 289rem;
+  left: 90rem;
+  text-align: left;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+.para{
+  position: relative;
+  top: 2rem;
+  left: 0rem;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.horizon {
+  position: relative;
+  top: 295.7rem;
+  opacity: 50%;
+
+}
+
+.twitter{
+/*  display: flex;*/
+  position:relative;
+  top: 145rem;
+  left: 45.8rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+
+
+}
+.twitter:hover{
+  filter: grayscale(0%);
+}
+
+/*/*/*.insta {
+/*  display: flex;*/
+  position:relative;
+  top: 143.5rem;
+  left: 51.4rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.insta:hover{
+  filter: grayscale(0%);
+}
+
+.github {
+/*  display: flex;*/
+  position: relative;
+  top: 141.6rem;
+  left: 57rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  height: 4.2rem;
+
+}
+.box {
+  position: absolute;
+  top: 300rem;
+  left: 90rem;
+  height: 75rem;
+  width: 70rem;
+  padding: 5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.5);*/
+  overflow: hidden;
+  color: #000;
+  border-radius: 3rem;
+}
+
+.box: before{
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  filter: blur(.3rem);
+}
+
+/*@media(max-width:998px){
+  html{
+    font-size: 55%;
+  }
+}*/
+
+@media(max-width:770px){
+
+  .Upper-Circle{
+    position: relative;
+    left: -10rem;
+  }
+  .logo{
+    position: absolute;
+    left: 30rem;
+  }
+  .firstperson {
+  position: absolute;
+  right: -30rem;
+  top: 24rem;
+  height: 45rem
+
+}
+.secondperson {
+  position: absolute;
+  right: -55rem;
+  top: 23.6rem;
+  height: 45rem
+
+}
+.heading {
+  text-align: left;
+  font-size: 5.5rem;
+  position: absolute;
+  top: 60rem;
+  left: 8rem;
+  white-space: nowrap;
+  padding: 0rem 2rem;
+  background: linear-gradient(to right, #FFFFFF 30%, #7035BC 23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: fadeInTop 1.2s both;
+  -moz-animation: fadeInTop 1.2s both;
+  -o-animation: fadeInTop 1.2s both;
+  animation: fadeInTop 1.2s both;
+  animation-name: fadeInTop;
+
+
+}
+
+
+  .below-circle{
+    position: absolute;
+    right: -65rem;
+    top: 83.5rem;
+    display: flex;
+
+  }
+  .navbar {
+  position: absolute;
+  top: -2.5rem;
+  left: 100rem;
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+  .collapse-navbar1 button{
+
+
+  width: 13rem;
+  height: 6rem;
+  padding: 1rem;
+  margin: 0 4rem;
+  font-size: 2rem;
+  position: relative;
+  top: 1rem;
+  left: 34rem;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  color: purple;
+  font-weight: 100;
+  border: .3rem solid purple;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: .4s;
+  background-color: transparent;
+  }
+  button:hover  {
+    box-shadow:  0 0rem .5rem 0 #581C92,
+                0 0rem 2rem 0 #581C92;
+    text-shadow: 0 0 .3rem #581C92, 0 0 0rem #581C92;
+  }
+  .header{
+  position: fixed;
+  top: 3rem;
+  left: 110rem;
+  }
+
+  .ethimg{
+  position: absolute;
+  top: 35rem;
+  left: 13rem;
+  animation: fade-up 2s;
+}
+
+.bitimg{
+  position: absolute;
+  top: 35rem;
+  left: 40rem;
+  animation: fade-up 1s;
+}
+
+.comp2{
+  position: absolute;
+  top: 45rem;
+  left: 45rem;
+  animation: fade-up 1.2s;
+}
+
+.comp1{
+  position: absolute;
+  top: 50rem;
+  left: 20rem;
+  animation: fade-up 0.9s;
+}
+
+.vector1{
+  position: absolute;
+  top: 59rem;
+  left: 39rem;
+  animation: fade-up 1s;
+}
+.vector2{
+  position: absolute;
+  top: 74rem;
+  left: 2rem;
+  animation: fade-up 0.9s;
+}
+/*---------------------------------------------2ndpage---------------------------------------------*/
+.upperCircle{
+  position: absolute;
+  right: -65rem;
+  top: 100.8rem;
+  scroll-snap-align: center;
+}
+
+.belowCircle{
+  display: block;
+  position: absolute;
+  top: 179.1rem;
+  left: 66.45%;
+
+}
+
+.heading2{
+  position: absolute;
+  top: 115rem;
+  left: 31rem;
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+
+.eth2 {
+  position: absolute;
+  top: 110rem;
+  left: 110rem;
+
+}
+.bit2 {
+  position: absolute;
+  top: 120rem;
+  left: 130rem;
+}
+
+.comp22 {
+  position: absolute;
+  top: 145rem;
+  left: 110rem;
+}
+
+.tether{
+  position: absolute;
+  top: 130rem;
+  left: 100rem;
+}
+
+.comp12 {
+  position: absolute;
+  top: 135rem;
+  left: 120rem;
+}
+
+.vector1-2nd{
+  position: absolute;
+  top: 105rem;
+  left: 130rem;
+}
+
+.vector2-2nd{
+  position: absolute;
+  top: 145rem;
+  left: 130rem;
+}
+
+.logo-img {
+    position: absolute;
+    top: 5%;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    position: absolute;
+    top: 130rem;
+    left: 30rem;
+}
+.container1 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+
+
+.container1 .coin-price .logo1{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 130rem;
+    left: 65rem;
+}
+.container2 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container2 .coin-price .logo2{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 150rem;
+    left: 30rem;
+}
+.container3 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container3 .coin-price .logo3{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 150rem;
+    left: 65rem;
+}
+.container4 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container4 .coin-price .logo4{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+/*---------------------------------------------3ndpage---------------------------------------------*/
+.upperclass3 {
+  position: absolute;
+  top: 190.7rem;
+  left: 42.5rem;
+  scroll-snap-align: center;
+}
+.upperclassstar{
+  position: absolute;
+  top: 190.7rem;
+  left: 44.5rem;
+}
+
+.belowcircle3{
+  position: absolute;
+  top: 260rem;
+  left: -7rem;
+  height: 15.7rem
+
+}
+
+.swaptitle{
+  position: absolute;
+  top: 197rem;
+  left: 10rem;
+  font-size: 5rem;
+  color: var(--primary-color);
+
+}
+.exchangeBox{
+  position: absolute;
+  top: 200rem;
+  left: 75rem;
+}
+/*---------------------------------------------4ndpage---------------------------------------------*/
+
+.finalCircle{
+  position: absolute;
+  top: 275.6rem;
+  left: -7rem;
+  scroll-snap-align: end;
+  height: 80.2rem
+
+}
+
+.ProfilePic {
+  position: absolute;
+  top: 290rem;
+  left: 35rem;
+}
+.name {
+  position: absolute;
+  top: 310rem;
+  left: 34rem;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.aboutme{
+  position: absolute;
+  top: 275rem;
+  left: 70rem;
+  text-align: left;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+.para{
+  position: relative;
+  top: -3rem;
+  left: -2rem;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.horizon {
+  position: relative;
+  top: 295.7rem;
+  opacity: 50%;
+
+}
+
+.twitter{
+/*  display: flex;*/
+  position:relative;
+  top: 145rem;
+  left: 35.8rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+
+
+}
+.twitter:hover{
+  filter: grayscale(0%);
+}
+
+/*/*/*.insta {
+/*  display: flex;*/
+  position:relative;
+  top: 143.5rem;
+  left: 44.4rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.insta:hover{
+  filter: grayscale(0%);
+}
+
+.github {
+/*  display: flex;*/
+  position: relative;
+  top: 141.6rem;
+  left: 53rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  height: 4.2rem;
+
+}
+.box {
+  position: absolute;
+  top: 300rem;
+  left: 70rem;
+  height: 75rem;
+  width: 70rem;
+  padding: 5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.5);*/
+  overflow: hidden;
+  color: #000;
+  border-radius: 3rem;
+}
+
+.box: before{
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  filter: blur(.3rem);
+}
+#icon{
+  position: fixed;
+  top: 105.8rem;
+  left: 130rem;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 4rem;
+  z-index:99999;
+  height: 5rem;
+  weight: 5rem;
+
+}
+}
+
+
+@media(max-width:1024px){
+    .Upper-Circle{
+    position: relative;
+    left: -10rem;
+  }
+  .logo{
+    position: absolute;
+    left: 30rem;
+  }
+  .firstperson {
+  position: absolute;
+  right: -30rem;
+  top: 24rem;
+  height: 45rem
+
+}
+.secondperson {
+  position: absolute;
+  right: -55rem;
+  top: 23.6rem;
+  height: 45rem
+
+}
+.heading {
+  text-align: left;
+  font-size: 5.5rem;
+  position: absolute;
+  top: 60rem;
+  left: 8rem;
+  white-space: nowrap;
+  padding: 0rem 2rem;
+  background: linear-gradient(to right, #FFFFFF 30%, #7035BC 23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: fadeInTop 1.2s both;
+  -moz-animation: fadeInTop 1.2s both;
+  -o-animation: fadeInTop 1.2s both;
+  animation: fadeInTop 1.2s both;
+  animation-name: fadeInTop;
+
+
+}
+
+
+  .below-circle{
+    position: absolute;
+    right: -65rem;
+    top: 83.5rem;
+    display: flex;
+
+  }
+  .navbar {
+  position: absolute;
+  top: -2.5rem;
+  left: 100rem;
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+  .collapse-navbar1 button{
+
+
+  width: 13rem;
+  height: 6rem;
+  padding: 1rem;
+  margin: 0 4rem;
+  font-size: 2rem;
+  position: relative;
+  top: 1rem;
+  left: 34rem;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  color: purple;
+  font-weight: 100;
+  border: .3rem solid purple;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: .4s;
+  background-color: transparent;
+  }
+  button:hover  {
+    box-shadow:  0 0rem .5rem 0 #581C92,
+                0 0rem 2rem 0 #581C92;
+    text-shadow: 0 0 .3rem #581C92, 0 0 0rem #581C92;
+  }
+  .header{
+  position: fixed;
+  top: 3rem;
+  left: 110rem;
+  }
+
+  .ethimg{
+  position: absolute;
+  top: 35rem;
+  left: 13rem;
+  animation: fade-up 2s;
+}
+
+.bitimg{
+  position: absolute;
+  top: 35rem;
+  left: 40rem;
+  animation: fade-up 1s;
+}
+
+.comp2{
+  position: absolute;
+  top: 45rem;
+  left: 45rem;
+  animation: fade-up 1.2s;
+}
+
+.comp1{
+  position: absolute;
+  top: 50rem;
+  left: 20rem;
+  animation: fade-up 0.9s;
+}
+
+.vector1{
+  position: absolute;
+  top: 59rem;
+  left: 39rem;
+  animation: fade-up 1s;
+}
+.vector2{
+  position: absolute;
+  top: 74rem;
+  left: 2rem;
+  animation: fade-up 0.9s;
+}
+/*---------------------------------------------2ndpage---------------------------------------------*/
+.upperCircle{
+  position: absolute;
+  right: -65rem;
+  top: 100.8rem;
+  scroll-snap-align: center;
+}
+
+.belowCircle{
+  display: block;
+  position: absolute;
+  top: 179.1rem;
+  left: 66.45%;
+
+}
+
+.heading2{
+  position: absolute;
+  top: 115rem;
+  left: 31rem;
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+
+.eth2 {
+  position: absolute;
+  top: 110rem;
+  left: 110rem;
+
+}
+.bit2 {
+  position: absolute;
+  top: 120rem;
+  left: 130rem;
+}
+
+.comp22 {
+  position: absolute;
+  top: 145rem;
+  left: 110rem;
+}
+
+.tether{
+  position: absolute;
+  top: 130rem;
+  left: 100rem;
+}
+
+.comp12 {
+  position: absolute;
+  top: 135rem;
+  left: 120rem;
+}
+
+.vector1-2nd{
+  position: absolute;
+  top: 105rem;
+  left: 130rem;
+}
+
+.vector2-2nd{
+  position: absolute;
+  top: 145rem;
+  left: 130rem;
+}
+
+.logo-img {
+    position: absolute;
+    top: 5%;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    position: absolute;
+    top: 130rem;
+    left: 30rem;
+}
+.container1 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+
+
+.container1 .coin-price .logo1{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 130rem;
+    left: 65rem;
+}
+.container2 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container2 .coin-price .logo2{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 150rem;
+    left: 30rem;
+}
+.container3 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container3 .coin-price .logo3{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    top: 150rem;
+    left: 65rem;
+}
+.container4 .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #ccc;
+    margin: .7rem;
+}
+.container4 .coin-price .logo4{
+    display: flex;
+    width: 7rem;
+    margin-right: 1rem;
+}
+/*---------------------------------------------3ndpage---------------------------------------------*/
+.upperclass3 {
+  position: absolute;
+  top: 190.7rem;
+  left: 42.5rem;
+  scroll-snap-align: center;
+}
+.upperclassstar{
+  position: absolute;
+  top: 190.7rem;
+  left: 44.5rem;
+}
+
+.belowcircle3{
+  position: absolute;
+  top: 260rem;
+  left: -7rem;
+  height: 15.7rem
+
+}
+
+.swaptitle{
+  position: absolute;
+  top: 197rem;
+  left: 10rem;
+  font-size: 5rem;
+  color: var(--primary-color);
+
+}
+.exchangeBox{
+  position: absolute;
+  top: 200rem;
+  left: 75rem;
+}
+/*---------------------------------------------4ndpage---------------------------------------------*/
+
+.finalCircle{
+  position: absolute;
+  top: 275.6rem;
+  left: -7rem;
+  scroll-snap-align: end;
+  height: 80.2rem
+
+}
+
+.ProfilePic {
+  position: absolute;
+  top: 290rem;
+  left: 35rem;
+}
+.name {
+  position: absolute;
+  top: 310rem;
+  left: 34rem;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.aboutme{
+  position: absolute;
+  top: 275rem;
+  left: 70rem;
+  text-align: left;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+.para{
+  position: relative;
+  top: -3rem;
+  left: -2rem;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.horizon {
+  position: relative;
+  top: 295.7rem;
+  opacity: 50%;
+
+}
+
+.twitter{
+/*  display: flex;*/
+  position:relative;
+  top: 145rem;
+  left: 35.8rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+
+
+}
+.twitter:hover{
+  filter: grayscale(0%);
+}
+
+/*/*/*.insta {
+/*  display: flex;*/
+  position:relative;
+  top: 143.5rem;
+  left: 44.4rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.insta:hover{
+  filter: grayscale(0%);
+}
+
+.github {
+/*  display: flex;*/
+  position: relative;
+  top: 141.6rem;
+  left: 53rem;
+/*  margin-top: -1975rem;*/
+  filter: grayscale(100%);
+  height: 4.2rem;
+
+}
+.box {
+  position: absolute;
+  top: 300rem;
+  left: 70rem;
+  height: 75rem;
+  width: 70rem;
+  padding: 5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.5);*/
+  overflow: hidden;
+  color: #000;
+  border-radius: 3rem;
+}
+
+.box: before{
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  filter: blur(.3rem);
+}
+#icon{
+  position: fixed;
+  top: 105.8rem;
+  left: 130rem;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 4rem;
+  z-index:99999;
+  height: 5rem;
+  weight: 5rem;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
